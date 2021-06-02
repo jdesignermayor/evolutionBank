@@ -1,5 +1,10 @@
 # EvolutionBank
 
+Description:
+
+Este proyecto esta basado en la ultima version de angular, utiliza estructura basada en components, models, services y utiliza LocalStorage como state management.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
 ## Development server
