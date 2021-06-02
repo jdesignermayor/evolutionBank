@@ -4,6 +4,7 @@ Description:
 
 Este proyecto esta basado en la ultima version de angular, utiliza estructura basada en components, models, services y utiliza LocalStorage como state management.
 
+|username: email@email.com| phone: 3046370804|
 
 # Structure
 
