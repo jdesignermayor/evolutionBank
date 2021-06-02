@@ -1,0 +1,58 @@
+<div class="container">
+
+    <div *ngIf="!displayPinField; then loginField else pinField "></div>
+    <ng-template #loginField>
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" novalidate>
+            <div class="input-container">
+                <label for="email">Correo electrónico:</label>
+                <input type="text" class="input" name="email" formControlName="email"
+                    placeholder="Ejemplo: tucorreo@tuemail.com">
+                <div class="error"
+                    *ngIf="signUpForm.controls['email'].invalid && (signUpForm.controls['email'].dirty || signUpForm.controls['email'].touched)">
+                    Email is required.
+                </div>
+                <br>
+            </div>
+            <div class="input-container">
+                <label for="phone">Número de teléfono:</label>
+                <input type="number" class="input" name="phone" formControlName="phone" placeholder="Ejemplo: 30000000">
+                <div class="error"
+                    *ngIf="signUpForm.controls['phone'].invalid && (signUpForm.controls['phone'].dirty || signUpForm.controls['phone'].touched)">
+                    Phone number is required.
+                </div>
+                <br>
+            </div>
+            <div class="error" *ngIf="errorMessage">
+                <p> {{errorMessage}}</p>
+            </div>
+
+            <div class="input-container">
+                <button type="submit" class="btn btn-primary" [disabled]="!signUpForm.valid">Continuar</button>
+            </div>
+
+        </form>
+    </ng-template>
+
+    <ng-template #pinField>
+        <form [formGroup]="pinNumberForm" (ngSubmit)="onSubmitPinNumber()" novalidate>
+            <div class="input-container">
+                <label for="phone">PIN</label>
+                <input type="number" class="input" name="number" formControlName="pinNumber"
+                    placeholder="Ejemplo: 30000000">
+                <div class="error"
+                    *ngIf="pinNumberForm.controls['pinNumber'].invalid && (pinNumberForm.controls['pinNumber'].dirty || pinNumberForm.controls['pinNumber'].touched)">
+                    PIN number is required.
+                </div>
+                Your PIN IS : {{ displayPinNumber }}
+                <div class="error" *ngIf="errorMessage">
+                    <p> {{errorMessage}}</p>
+
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="!pinNumberForm.valid">Consultar
+                    trámite</button>
+            </div>
+
+        </form>
+    </ng-template>
+
+</div>

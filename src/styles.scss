@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding    : 0;
+    margin     : 0;
+}
+
+:host {
+    font-family            : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size              : 14px;
+    color                  : #333;
+    box-sizing             : border-box;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.btn {
+    cursor       : pointer;
+    width        : 100%;
+    padding      : 12px;
+    font-size    : 16px;
+    border-radius: 5px;
+    padding      : 12px;
+    border          : 1px #ccc solid;
+    &-primary {
+        background-color: #b7dbb4;
+        border          : 1px #1f9a7a solid;
+    }
+
+    &:active {
+        background-color: #b7dbb4;
+        border          : 1px #1f9a7a solid;
+    }
+}
+
+.toggle {
+    display      : grid;
+    align-items  : center;
+    background   : #ddd;
+    border-radius: 5px;
+    margin       : 12px;
+    padding      : 5px;
+    cursor       : pointer;
+
+    .type {
+        font-weight: bold;
+    }
+
+    &:hover {
+        background: #d5e8d4;
+    }
+
+    &:active {
+        background: #b7dbb4;
+    }
+}
+
+.isActive {
+    background: #b7dbb4;
+}

@@ -1,0 +1,35 @@
+.container {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    height         : 100vh;
+
+    .input {
+        background-color: #f2f2f2;
+        border          : none;
+        padding         : 14px;
+        border-radius   : 5px;
+        font-size       : 16px;
+        margin-top      : 11px;
+    }
+
+    .input-container {
+        width          : 400px;
+        display        : grid;
+        align-items    : center;
+        justify-content: initial;
+    }
+}
+
+.error {
+    color : #e46464;
+    margin: 5px;
+}
+
+.info {
+    position: relative;
+    font-size     : 4em;
+    letter-spacing: -1.8px;
+    margin-top    : -242px;
+    width         : 651px;
+}

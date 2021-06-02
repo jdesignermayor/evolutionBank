@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-1">
+        <div class="toggle" [class.isActive]="viewId == procedure.id" *ngFor="let procedure of procedures"
+            (click)="onLoadStatus(procedure)">
+            <strong>
+                {{ procedure.date }}
+            </strong>
+            <p class="type">{{ procedure.type }}</p>
+            <p>{{ procedure.title }}</p>
+            <strong>Radicado: {{ procedure.rad }}</strong>
+        </div>
+        <button class="btn" (click)="onSignOut()">
+            Cerrar sesión
+        </button>
+    </div>
+    <div class="col-2">
+        <div class="timeline">
+            <div class="container" [ngClass]="status.position" *ngFor="let status of statusProcedures">
+                <div class="date">{{ status.date}}</div>
+                <i class="icon fa fa-home"></i>
+                <div class="content">
+                    <h2>{{status.title}}</h2>
+                    <p>
+                        {{status.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
