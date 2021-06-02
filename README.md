@@ -5,6 +5,8 @@ Description:
 Este proyecto esta basado en la ultima version de angular, utiliza estructura basada en components, models, services y utiliza LocalStorage como state management.
 
 
+![Test Image 4](https://github.com/jdesignermayor/evolutionBank/blob/master/src/assets/images/img1.png 1.2k)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
 ## Development server
