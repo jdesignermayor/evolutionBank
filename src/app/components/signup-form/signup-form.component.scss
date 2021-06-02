@@ -2,7 +2,8 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
-    height         : 100vh;
+
+    height: 60vh;
 
     .input {
         background-color: #f2f2f2;
@@ -14,10 +15,11 @@
     }
 
     .input-container {
-        width          : 400px;
         display        : grid;
         align-items    : center;
         justify-content: initial;
+        margin         : 1px;
+        min-width      : 354px;
     }
 }
 
@@ -27,9 +29,13 @@
 }
 
 .info {
-    position: relative;
+    position      : relative;
     font-size     : 4em;
     letter-spacing: -1.8px;
     margin-top    : -242px;
     width         : 651px;
+}
+
+.illustration {
+    margin: 109px 0px 20px 0px;
 }

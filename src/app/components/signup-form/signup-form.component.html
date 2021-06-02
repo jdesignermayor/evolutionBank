@@ -2,8 +2,10 @@
 
     <div *ngIf="!displayPinField; then loginField else pinField "></div>
     <ng-template #loginField>
+
         <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" novalidate>
             <div class="input-container">
+                <img src="./assets/illustrations/Reading list-cuate.svg" class="illustration" alt="">
                 <label for="email">Correo electrónico:</label>
                 <input type="text" class="input" name="email" formControlName="email"
                     placeholder="Ejemplo: tucorreo@tuemail.com">
