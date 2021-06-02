@@ -2,8 +2,7 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
-
-    height: 60vh;
+    height         : 60vh;
 
     .input {
         background-color: #f2f2f2;
@@ -26,14 +25,6 @@
 .error {
     color : #e46464;
     margin: 5px;
-}
-
-.info {
-    position      : relative;
-    font-size     : 4em;
-    letter-spacing: -1.8px;
-    margin-top    : -242px;
-    width         : 651px;
 }
 
 .illustration {

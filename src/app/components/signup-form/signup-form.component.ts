@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
 import { FormGroup, Validators, FormControl } from "@angular/forms";
 import { NavigationExtras, Router } from '@angular/router';
 
-
-
 @Component({
   selector: 'app-signup-form',
   templateUrl: './signup-form.component.html',
@@ -44,6 +42,7 @@ export class SignupFormComponent {
           this.displayPinField = true;
           this.displayPinNumber = pinNumber;
           this.errorMessage = "";
+          
         }).catch((err: any) => {
           this.errorMessage = err.message;
         })
@@ -51,7 +50,7 @@ export class SignupFormComponent {
         console.log('something went wrong');
       }
     } else {
-      alert('please review the fields.')
+      this.errorMessage = 'please review the fields.';
     }
   }
 
@@ -71,6 +70,7 @@ export class SignupFormComponent {
         })
       }).catch((err) => {
         this.errorMessage = err.message;
+        alert('something went wrong');
       })
     }
   }

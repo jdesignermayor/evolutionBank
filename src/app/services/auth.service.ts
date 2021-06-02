@@ -225,6 +225,7 @@ export class AuthService {
     localStorage.setItem('userInformation', JSON.stringify(userInformation));
   }
 
+  // For implement in the future
   isUserLoggedIn() {
     const data = localStorage.getItem('userInformation');
     return data ? true : false;
