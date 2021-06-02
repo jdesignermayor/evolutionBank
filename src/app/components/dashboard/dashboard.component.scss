@@ -62,6 +62,7 @@
         padding   : 0;
         max-height: 100vh;
         overflow-x: inherit !important;
+
     }
 
     .timeline::after {
@@ -120,6 +121,7 @@
     padding   : 15px 0;
     max-height: 100vh;
     overflow-x: auto;
+    margin-top: 83px;
 }
 
 .timeline::after {
