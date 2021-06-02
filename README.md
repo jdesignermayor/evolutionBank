@@ -7,7 +7,7 @@ Este proyecto esta basado en la ultima version de angular, utiliza estructura ba
 Go live:
 [link to Live!](https://evolution-bank.vercel.app/)
 
-|username: email@email.com| phone: 3046370804|
+|username: cliente@email.com| phone: 3046370804|
 
 # Structure
 
